@@ -35,8 +35,16 @@ GIVEN a functional Express.js API:
 
 The following animation demonstrates the application functionality:
 
-![Mockup](./db/images/mockup1.png)
-![Mockup](./db/images/mockup2.png)
+![Mockup](./config/images/mockup1.png)
+![Mockup](./config/images/mockup2.png)
+
+![Video Demo](https://github.com/JulianmLacey/EcommerceBackend/assets/117090683/55a9ab5a-26c4-4df5-897c-f11f4049807d)
+
+- SQL connection: 0:00
+- SEED Database: 0:23
+- Start Server: 0:30
+- GET: Categories, 0:38; Products, 1:05; Tags, 1:37
+- GET by ID, POST, and DEL follow each of the above timestamps
 
 ## Installation
 
