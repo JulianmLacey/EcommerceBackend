@@ -38,9 +38,6 @@ The following animation demonstrates the application functionality:
 ![Mockup](./config/images/mockup1.png)
 ![Mockup](./config/images/mockup2.png)
 
-https://github.com/JulianmLacey/EcommerceBackend/assets/117090683/55a9ab5a-26c4-4df5-897c-f11f4049807d
-
-
 https://github.com/JulianmLacey/EcommerceBackend/assets/117090683/39009a63-2e6a-410d-8ef5-d877617af21d
 
 
