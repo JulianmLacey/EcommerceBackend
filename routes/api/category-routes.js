@@ -12,8 +12,7 @@ router.get("/", (req, res) => {
 			console.log(err);
 		});
 });
-
-router.get("/:id", (req, res) => {
+/*
 	Category.findOne({
 		where: { id: req.params.id },
 		attributes: ["id", "category_name"],
@@ -24,7 +23,21 @@ router.get("/:id", (req, res) => {
 		})
 		.catch((err) => {
 			res.status(500).json(err);
+		});*/
+router.get("/:id", async (req, res) => {
+	try {
+		const categoryData = await Category.findByPk(req.params.id, {
+			include: [{ model: Product }],
 		});
+
+		if (!categoryData) {
+			res.status(404).json({ message: "No category found with this id!" });
+			return;
+		}
+		res.status(200).json(categoryData);
+	} catch (err) {
+		res.status(500).json(err);
+	}
 });
 // create a new category
 router.post("/", (req, res) => {
